@@ -1,0 +1,85 @@
+Ganache CLI v6.4.2 (ganache-core: 2.5.4)
+
+Available Accounts
+==================
+(0) 0xff380cc4d0028b944f6ac6e825132247bfa199d3 (~100 ETH)
+(1) 0x193f962f1c6046cb89324cd99c7c8939aed20dda (~100 ETH)
+(2) 0xd52d5f6c819c9f6037d719d4a9df0cae0248c282 (~100 ETH)
+(3) 0xbb6c4511f50a3e48414c17c7f8f1d5b2b37bb0e3 (~100 ETH)
+(4) 0x9f91f474ff74cb73df7a94ca95e2e71da2fb03de (~100 ETH)
+(5) 0x5305804fae6f201776e08b3efa58a5fc1840b461 (~100 ETH)
+(6) 0x4b9ef9b1f81c15df7af029ee6e9cea0d0b7a49cd (~100 ETH)
+(7) 0x213d5a4764a4821786de9a07b4d2fce06a76c190 (~100 ETH)
+(8) 0x2d9ba740efe0302df49f563d97029fab8cbb9069 (~100 ETH)
+(9) 0xc152cc093e7c05ff63ea4d3cd41c43aa3ece8004 (~100 ETH)
+
+Private Keys
+==================
+(0) 0xcab43a373c9899100d5cd69f0d165d69dc32fc41c306d22e322710384b0e98b6
+(1) 0xc3fb7ef633b5a6e26713fc1eb8d0c514c3b3e2cbce5266c146888934450393d5
+(2) 0x9220db62d05466e340bd819b472c245d03acb3fa38fe46e2464f7ed3896dc11d
+(3) 0x28f0ee70b5280a6af3b0dbe14d0a7a5bed9dc6892384182b7f417ea22e927e69
+(4) 0xa0a6b246424f0498b69123ae2ccb371abdc8c20c53ead6f9f578c3eb8cdce9ac
+(5) 0x31d811dcca1de99dce080958c72c4828cd8857a7d7dd40a7c3722b6e6feadd7e
+(6) 0x481494968852d0749fb69eae51942777d5747130c492fe08a801159a440488e0
+(7) 0xc4860f4c40318109057a19e196ad208620267555b11c629d888fa981bdf85bd0
+(8) 0xd8c4d6918c16b5bf36f4abd61ccbcddf23fa92f726ea80f6818c6823a963c1a3
+(9) 0xf108cca390e157b99020159369de1fcd794123d78031eb8f3776c1fec9542d6e
+
+HD Wallet
+==================
+Mnemonic:      snack sorry odor eyebrow history exercise system short escape detail flavor hub
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Gas Price
+==================
+20000000000
+
+Gas Limit
+==================
+6721975
+
+Listening on 127.0.0.1:8545
+
+
+/* GET home page. */
+// router.get('/', function (req, res, next) {
+//   res.render('hospitallogin');
+// });
+
+// //loin validation
+// router.post('/login', function(req, res, next) {
+ 
+//     data = req.body;
+//     Medichain.methods.hospitalLogin(data.Key)
+//         .call({ from: coinbase }).then((val) => {
+           
+//           val= web3.utils.toBN(val).toString();
+//           if(val == 1){
+//             web3.eth.personal.unlockAccount(data.Key, data.Password, 1000)
+//             .then((response) => {
+//                 if(response){
+//                 sessionStorage.clear();
+//                 sdata = "Hospital";
+//                 sessionStorage.setItem("User",sdata);
+//                     res.redirect('/hospital/hospitaldashboard')
+//                 }    
+//                 console.log(response);
+//             }).catch((error) => {
+
+//                 res.redirect('/hospital')
+//                 console.log("Password You Entered is wrong")
+
+//                 // console.log(error);
+//             });
+//           }else{
+//               res.redirect('/hospital')
+//             console.log("Address not found")
+//           }
+            
+//         }).catch((error) => {
+//                   console.log(error);
+//               });
+  
+    
+//   });

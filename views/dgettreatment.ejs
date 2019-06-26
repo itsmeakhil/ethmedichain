@@ -1,0 +1,100 @@
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctor Dashboard</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="jumbotron text-center bg-dark">
+    <div class="jumbotron bg-dark">
+      <h1 class="text-info display-3">
+        Medi<span class="text-secondary">Chain</span>
+      </h1>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-light btn btn-outline-info">
+        <ul class="navbar-nav">
+            <li class="nav-item  ">
+                <a class="nav-link text-info" href="/" >Medichain | Home</a>
+              </li>
+          <li class="nav-item  ">
+            <a class="nav-link text-info " href="/doctor/doctordashboard" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="/doctor/addpatient" > Add Patient </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="/doctor/addtreatment" > Add Patient Treatment</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/doctor/searchtreatment" >Search Treatment </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="/doctor/searchpatient" >Search Patients </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info " href="/doctor/searchdoctor" >Search Doctor </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="/doctor/searchhospital" >Search Hospital </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <br />
+
+      <div class="jumbotron border border-info text-info bg-dark">
+        <h2 class="text-info">Treatment Details</h2>
+
+  <table class="table table-sm ">
+      <thead class="bg-light text-info">
+          <tr>
+              <th>Id</th>
+              <th>Doctor Id</th>
+              <th>Hospital Id</th>
+              <th>Observation</th>
+              <th>Disease</th>
+              <th>Medicine</th>
+          </tr>
+      </thead>
+      <tbody class="text-white">
+          <tr>
+              <td>
+                  <%= myData._Id1 %>
+              </td>
+              <td>
+                  <%= myData._DoctorId %>
+              </td>
+              <td>
+                  <%= myData._Hospital %>
+              </td>
+              <td> 
+                <%= myData._Observation%>
+                
+              </td>
+              <td>
+                  <%= myData._Disease %>
+              </td>
+              <td>
+                  <%= myData._Medicine %>
+               </td>
+               
+          </tr> 
+      </tbody>
+  </table>
+      </div>
+    </div>
+  </body>
+</html>

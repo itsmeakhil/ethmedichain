@@ -1,0 +1,105 @@
+
+
+            <!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Dashboard</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="jumbotron text-center bg-dark">
+    <div class="jumbotron bg-dark">
+      <h1 class="text-info display-3">
+       Medi<span class="text-secondary">Chain</span>
+      </h1>
+      <nav
+        class="navbar navbar-expand-sm bg-dark navbar-light btn btn-outline-info"
+      >
+        <ul class="navbar-nav">
+            <li class="nav-item  ">
+                <a class="nav-link text-info" href="/" >Medichain | Home</a>
+              </li>
+          <li class="nav-item  ">
+            <a class="nav-link text-info" href="/hospital/hospitaldashboard" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="/hospital/add_doctors" > Add Doctors</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/hospital/searchdoctor" > Search Doctor </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-info" href="/hospital/searchpatient" > Search Patient </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <br />
+
+    <div class="jumbotron border border-info bg-dark">
+        <table class="table table-sm ">
+            <thead class="bg-light text-info">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Public Key</th>
+                    <th>Qualification</th>
+                    <th>Hospital Working In</th>
+                </tr>
+            </thead>
+            <tbody class="text-white">
+                <tr>
+                    <td>
+                        <%= myData._Id1 %>
+                    </td>
+                    <td>
+                        <%= myData._Name %>
+                    </td>
+                    <td>
+                        <%= myData._Age %>
+                    </td>
+                    <td> 
+                      <% if(myData._MyGender==0) { %>
+                      Male
+                      <% } else if(myData._MyGender==1) { %>
+                      Female
+                      <% } else { %>
+                      Other
+                      <% } %>
+                    </td>
+                    <td>
+                        <%= myData._Email %>
+                    </td>
+                    <td>
+                        <%= myData._Publickey %>
+                     </td>
+                    <td>
+                    <%= myData._Qualification %>
+                 </td>
+                 <td>
+                    <%= myData._HospitalId %>
+                 </td>
+                </tr> 
+            </tbody>
+        </table>
+           
+    </div>
+    </div>
+  </body>
+</html>

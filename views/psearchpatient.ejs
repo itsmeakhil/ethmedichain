@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Patient HealthyChain </title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+</head>
+
+<body class="jumbotron text-center bg-dark">
+<div class="jumbotron bg-dark">
+  <h1 class="text-info display-3">Medi<span class="text-secondary">Chain</span> </h1>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-light btn btn-outline-info">
+      <ul class="navbar-nav">
+          <li class="nav-item  ">
+              <a class="nav-link text-info" href="/">Medichain | Home</a>
+            </li>
+        <li class="nav-item  ">
+          <a class="nav-link text-info" href="/patient/patientdashboard">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-info" href='/patient/searchtreatment'> Search Treatment </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link text-white" href='/patient/searchpatient'>Search Patient </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-info" href='/patient/searchdoctor'>Search Doctor </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-info" href="/patient/searchhospital">Search Hospital </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+    <br>
+
+<div class="jumbotron border border-info bg-dark">
+    <br>
+    <form action="/patient/getpatient" method="GET">
+      <input type="text" name="Id" placeholder="Patient Id" />
+      <button type="submit" class="btn btn-info text-white">Search</button>
+    </form>
+
+
+</div>
+
+
+</div>
+ </body>
+
+</html>
